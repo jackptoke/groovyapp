@@ -53,9 +53,9 @@ fun HomeScreen() {
         content = { innerPadding ->
             LazyColumn(contentPadding = innerPadding,
                 verticalArrangement = Arrangement.SpaceAround) {
-                val list = (0..75).map { it.toString()}
-                items(count = list.size) {
-                    Text(text = list[it],
+                val list = (0..30).map { it.toString()}
+                items(count = list.size) { index ->
+                    Text(text = "Playlist $index",
                         style = MaterialTheme.typography.bodyLarge,
                         modifier = Modifier.fillMaxWidth()
                             .padding(horizontal = 16.dp))

@@ -79,8 +79,10 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.ui.test.junit4)
-
+    androidTestImplementation(libs.androidx.rules)
     androidTestImplementation(libs.androidx.runner)
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    androidTestImplementation(libs.androidx.ui.test.manifest)
     androidTestImplementation("com.adevinta.android:barista:4.1.0") {
         exclude(group = "org.jetbrains.kotlin")  // Only if you already use Kotlin in your project
     }
